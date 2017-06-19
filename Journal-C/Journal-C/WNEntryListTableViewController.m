@@ -8,6 +8,7 @@
 
 #import "WNEntryListTableViewController.h"
 #import "WNEntryController.h"
+#import "WNJornalDetailViewController.h"
 
 @interface WNEntryListTableViewController ()
 
@@ -35,11 +36,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"entryCell" forIndexPath:indexPath];
     
     WNEntryController *entryControler = [WNEntryController sharedInstance];
-    
     WNEntry *entry = entryControler.entries[indexPath.row];
     
     cell.textLabel.text = entry.title;
-    
     
     return cell;
 }
@@ -52,8 +51,22 @@
 
 #pragma mark - Navigation
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([segue.identifier isEqualToString:@"toExistingCell"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        WNEntry *entry = [[WNEntryController sharedInstance]entries][indexPath.row];
+        
+        WNJornalDetailViewController *vc = (WNJornalDetailViewController *)segue.destinationViewController;
+        
+        vc.entry = entry;
+        vc.indexOfEntry = indexPath;
+        vc.nameTextField.text = entry.title;
+        vc.journalTextView.text = entry.bodyText;
+        
+    }
     
     
     

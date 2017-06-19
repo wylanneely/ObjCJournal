@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B26B15D71EF86C5000688EB3 /* WNJornalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B15D61EF86C5000688EB3 /* WNJornalDetailViewController.m */; };
 		B2801A951ED3764E00B2A295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2801A941ED3764E00B2A295 /* main.m */; };
 		B2801A981ED3764E00B2A295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2801A971ED3764E00B2A295 /* AppDelegate.m */; };
 		B2801A9E1ED3764E00B2A295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2801A9C1ED3764E00B2A295 /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B26B15D51EF86C5000688EB3 /* WNJornalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNJornalDetailViewController.h; sourceTree = "<group>"; };
+		B26B15D61EF86C5000688EB3 /* WNJornalDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNJornalDetailViewController.m; sourceTree = "<group>"; };
 		B2801A901ED3764E00B2A295 /* Journal-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journal-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2801A941ED3764E00B2A295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2801A961ED3764E00B2A295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 			children = (
 				B2801AB61ED3824600B2A295 /* WNEntryListTableViewController.h */,
 				B2801AB71ED3824600B2A295 /* WNEntryListTableViewController.m */,
+				B26B15D51EF86C5000688EB3 /* WNJornalDetailViewController.h */,
+				B26B15D61EF86C5000688EB3 /* WNJornalDetailViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			files = (
 				B2801AB21ED3771A00B2A295 /* WNEntry.m in Sources */,
 				B2801AB51ED379C800B2A295 /* WNEntryController.m in Sources */,
+				B26B15D71EF86C5000688EB3 /* WNJornalDetailViewController.m in Sources */,
 				B2801A981ED3764E00B2A295 /* AppDelegate.m in Sources */,
 				B2801AB81ED3824600B2A295 /* WNEntryListTableViewController.m in Sources */,
 				B2801A951ED3764E00B2A295 /* main.m in Sources */,
@@ -364,6 +370,7 @@
 				B2801AA91ED3764E00B2A295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

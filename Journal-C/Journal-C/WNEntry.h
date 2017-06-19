@@ -14,6 +14,6 @@
 @property (nonatomic, copy) NSString *bodyText;
 @property (nonatomic, copy) NSDate *timestamp;
 
-- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText andTimeStamp:(NSDate *)timeStamp;
+- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText;
 
 @end

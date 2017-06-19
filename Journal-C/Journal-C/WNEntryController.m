@@ -29,6 +29,8 @@ static NSString * const EntriesKey = @"entries";
 }
 
 - (NSArray *)entries { return self.internalEntries; }
+
+
 - (instancetype)init
 {
     self = [super init];

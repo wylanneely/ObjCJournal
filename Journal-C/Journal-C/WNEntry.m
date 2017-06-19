@@ -10,13 +10,13 @@
 
 @implementation WNEntry
 
-- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText andTimeStamp:(NSDate *)timeStamp
+- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText;
 {
     self = [super init];
     if (self) {
         _title = title;
         _bodyText = bodyText;
-        _timestamp = timeStamp;
+        _timestamp = [NSDate new];
         
     }
     return self;
